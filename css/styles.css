@@ -1,13 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 html {
+    /* height:1000px; */
+    width:100%;
+    margin:0;
+    padding:0;
     font-family: montserrat-light;
 }
 
 body{
+    background-color: #f0f2f0;
+    height:100%;
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+.bgImage {
     background-image: url("../Images/claujnunez_hero_backgroundimg.png");
-    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topSection {
+    width: 100%;
     margin: 0;
     padding: 0;
-    font-size: 15px;
+}
+
+.divHeader {
+    background-color: thistle;
+}
+
+.navHeader {
+    float: right;
+    color: white;
 }
 
 .heading {
@@ -49,17 +81,16 @@ nav > ul > li > a{
     text-decoration: none;
     float: right;
 }
-.navWrapperHead {
+
+/* .navWrapperHead {
     position: absolute;
     right: 0;
-}
+} */
 
 .navheader > li{
-    margin-right: 0px;
+    margin-right: 0;
     margin: 10px 50px 0px 0px;
     color: #fff;
-
-    
 }
 
 .logo-img{
@@ -91,12 +122,6 @@ a:hover {
     margin-left: auto;
 }
 
-.heroImg {
-    height: 100%;
-    padding: 25px;
-    text-align: center;
-    
-}
 .content {
     position: absolute;
     left: 20%;
@@ -106,16 +131,80 @@ a:hover {
     margin: 0 auto;
 }
 
-footer {
-    background-color: #fff;
-    position: absolute;
-    width: 100%;
-    bottom: 10%;
+.projectsSec {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
 
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+    height: 50%;
 }
-.navfooter a {
-    color: #333;
+
+.float-child {
+    width: 20%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}  
+
+.pictures {
+    height: 10%;
 }
+
+.card {
+    border: none;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 100px; /* Added */
+}
+
+.card-img {
+    /* background-color: greenyellow; */
+    width: auto;
+    max-height: 350px;
+    padding-left: 20px;
+}
+.card-body {
+    /* background-color: teal; */
+    padding: 30 30 30 30;
+    /* padding-bottom: 30px; */
+    text-align: right;
+}
+
+.card-bodyOdd {
+    /* background-color: lightseagreen; */
+    padding: 30 30 30 30;
+    margin-left: 100px;
+    padding-bottom: 30px;
+}
+
+.card-imgOdd {
+    /* background-color: red; */
+    width: 130%;
+    max-height: 350px;    
+}
+
+
+footer {
+position: absolute;
+bottom: -300%;
+background-color: #525252;
+width: 100%;
+ color: white;
+ text-align: center;
+ align-items: center;
+
+    
+}
+
+/* .navfooter a {
+    
+    position: relative;
+    
+    color: white;
+} */
 
 .buttonsWrapper {
    position: absolute;
@@ -135,6 +224,7 @@ footer {
 .btn-primary:hover {
    background-color: #91618e;
 }
+
 .btn-outline-secondary {
     width: 167px;
     height: 48px;
@@ -159,6 +249,6 @@ footer {
 }
 
 .iconsSocial {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     width: 2.5%;
 }
