@@ -1,24 +1,40 @@
 * {
+    height: auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 html {
-    /* height:1000px; */
-    width:100%;
-    margin:0;
-    padding:0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
     font-family: montserrat-light;
 }
 
 body{
     background-color: #f0f2f0;
-    height:100%;
+    height:auto;
     width:100%;
     margin: 0px;
     padding: 0px;
     font-size: 15px;
+    line-height: 1.6;
 }
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+}
+/* img {
+    width: 100%;
+} */
 
 .bgImage {
     background-image: url("../Images/claujnunez_hero_backgroundimg.png");
@@ -27,37 +43,50 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.topSection {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.divHeader {
-    background-color: thistle;
-}
-
-.navHeader {
+/* .navHeader {
     float: right;
     color: white;
-}
-
-.heading {
-    color: #fff;
-    font-size: 50px;
-}
-
-.smallHead {
-    color: #fff;
-    font-size: x-large;
-}
-
-.description {
-    color: #fff;
-}
+} */
 
 /* Navigation */
-nav {  
+.navbar {
+    float: right;
+    overflow: hidden;
+    height: 90px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px #fff solid;    
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* nav {
     text-align: center; 
 
 }
@@ -77,10 +106,10 @@ nav > ul > li > a{
     color: #fff;
     display: block;
     line-height: .50em;
-     padding: 1.50em 5em 1.50em 0em; /* Controls footer navigation bar */
+    padding: 1.50em 5em 1.50em 0em; /* Controls footer navigation bar 
     text-decoration: none;
     float: right;
-}
+} */
 
 /* .navWrapperHead {
     position: absolute;
@@ -95,15 +124,39 @@ nav > ul > li > a{
 
 .logo-img{
     position: relative;
+    width: auto;
+    max-width: 90px;
     margin: 10px 15px 15px 10px;
+    padding: 10px 15px;
+    box-shadow: #525252;
     float: left;
 }
-
 
 a:hover {
     background-color: #ddd;
     color: black;
+    text-decoration: none;
   }
+
+.smallHead {
+    color: #fff;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+.nameTitle {
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    text-align: center;
+    color: #fff;
+}
+
 
 .name {
     font-size: 20px;
@@ -131,6 +184,53 @@ a:hover {
     margin: 0 auto;
 }
 
+.buttonsWrapper {
+    position: absolute;
+    left: 15%;  
+    right: 15%;
+    bottom: 30%;
+     
+ }
+ 
+ .btn-primary {
+     width: 167px;
+     height: 48px;
+     background-color: #fff;
+     color: #722963
+ }
+ 
+ .btn-primary:hover {
+    background-color: #91618e;
+ }
+ 
+ .btn-outline-secondary {
+     width: 167px;
+     height: 48px;
+ }
+ 
+ .btn-outline-secondary:hover {
+     background-color: #722963;
+ }
+ 
+ .btn-outline-light {
+     margin-right: 40px;
+ }
+ 
+ .socialDiv {
+     position: absolute;
+     top: 150%;
+     left: 0%;
+     right: 0%;
+     color: white;
+     width: 100%;
+ }
+ 
+ .iconsSocial {
+     /* margin-right: 20px; */
+     width: 2.5%;
+ }
+
+/* Prejects Sections */
 .projectsSec {
     margin-top: 50px;
     margin-bottom: 150px;
@@ -162,41 +262,106 @@ a:hover {
 
 .card-img {
     /* background-color: greenyellow; */
+    background-color: #f0f2f0;
     width: auto;
     max-height: 350px;
     padding-left: 20px;
 }
+
 .card-body {
-    /* background-color: teal; */
+    background-color: #f0f2f0;
     padding: 30 30 30 30;
     /* padding-bottom: 30px; */
     text-align: right;
 }
 
 .card-bodyOdd {
-    /* background-color: lightseagreen; */
+    background-color: #f0f2f0;
     padding: 30 30 30 30;
     margin-left: 100px;
     padding-bottom: 30px;
 }
 
 .card-imgOdd {
-    /* background-color: red; */
-    width: 130%;
+    background-color: #f0f2f0;
+    width: 100%;
     max-height: 350px;    
 }
 
+.container-fluid, .col-md-8, .col-md-4, .col-md-6 {
+    background-color: #f0f2f0;
+    
+}
+
+.imgIcon {
+    display: inline-block;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #fafafa;
+}
+.skillIcons {
+    display: inline-block;
+    width: 40%;
+}
+
+.btn-primary2 {
+    width: 167px;
+    height: 48px;
+    background-color: #F47AF5;
+    color: #fff;
+    box-shadow: 0 1px 2px rgba(166, 12, 166, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn-primary2:hover {
+   background-color: #fff;
+   box-shadow: 0 5px 15px rgba(166, 12, 166, 0.8);
+
+}
+
+.card-deck {
+    height: 100%;
+    margin: 50px 25px;
+}
+
+.card2 {
+    background-color: rgba(165, 4, 71, 0.15);
+}
+.card-body2 {
+    padding: 25px;
+    height: 70%;
+    background-color: #800b72;
+}
+.card-title, #liDeck {
+    color: white;
+}
+
+
+/* Footer */
+.page-footer ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.page-footer a {
+    padding: 10px;
+    margin: 0 5px;
+}
+ a:hover {
+    border-bottom: 2px #fff solid;  
+    color: black;  
+}
 
 footer {
 position: absolute;
-bottom: -300%;
+bottom: auto;
 background-color: #525252;
 width: 100%;
  color: white;
  text-align: center;
- align-items: center;
-
-    
+ align-items: center;    
 }
 
 /* .navfooter a {
@@ -206,49 +371,14 @@ width: 100%;
     color: white;
 } */
 
-.buttonsWrapper {
-   position: absolute;
-   left: 15%;  
-   right: 15%;
-   bottom: 30%;
-    
+
+
+/* Tablets and under resolutions */
+@media(max-width: 760px) {
+ 
 }
 
-.btn-primary {
-    width: 167px;
-    height: 48px;
-    background-color: #fff;
-    color: #722963
-}
-
-.btn-primary:hover {
-   background-color: #91618e;
-}
-
-.btn-outline-secondary {
-    width: 167px;
-    height: 48px;
-
-}
-
-.btn-outline-secondary:hover {
-    background-color: #722963;
-}
-
-.btn-outline-light {
-    margin-right: 40px;
-}
-
-.socialDiv {
-    position: absolute;
-    top: 150%;
-    left: 0%;
-    right: 0%;
-    color: white;
-    width: 100%;
-}
-
-.iconsSocial {
-    /* margin-right: 20px; */
-    width: 2.5%;
+/* Mobile resolution */
+@media(max-width: 500px) {
+   
 }
