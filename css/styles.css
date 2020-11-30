@@ -90,36 +90,6 @@ h1 {
     height: 100%;
 }
 
-/* nav {
-    text-align: center; 
-
-}
-
-nav ul{
-    margin: 0 0 0 0;
-    padding: 0;
-}
-
-nav ul li{
-    display: inline-block;
-    
-}
-
-nav > ul > li > a{
-    
-    color: #fff;
-    display: block;
-    line-height: .50em;
-    padding: 1.50em 5em 1.50em 0em; /* Controls footer navigation bar 
-    text-decoration: none;
-    float: right;
-} */
-
-/* .navWrapperHead {
-    position: absolute;
-    right: 0;
-} */
-
 .navheader > li{
     margin-right: 0;
     margin: 10px 50px 0px 0px;
@@ -407,14 +377,67 @@ footer {
 @media(max-width: 500px) {
    .navbar {
        height: 110px;
+       padding: 0 15% 0 15%;
    }
 
    .navbar .flex {
-       flex-direction: column;
+        display: block;
+        
    }
 
-   .navbar ul {
-       padding: 10px;
-       background-color: rgba(red, green, blue, alpha);
+   .navbar ul {     
+       padding: 10;
+       background-color: rgba(0, 0, 0, .3);
    }
+
+   .logo-mobile {
+       float: left;
+       overflow: hidden;
+       padding: 5% 25% 0 25%;
+   }
+
+   .content {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 19%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+   .smallHead {
+       display: inline-block;
+       align-content: center;
+       text-align: center;
+       padding: 30 0 0 43% ;
+   }
+
+   .nameTitle {
+       font-size: 35px;   
+   }
+
+   .description {
+       
+       width: 100%;
+       position: absolute;
+       margin: 0%;
+       align-content: center;
+       text-align: center;
+       padding: 5 40;
+   }
+
+   .buttonsWrapper {
+       position: absolute;
+       padding: 0 0 0 40;
+       bottom: 30%;
+   }
+
+   .bgImage {
+       height: 70%;
+   }
+
+   .proSkills {
+       width: 100%;
+   }
+
 }
