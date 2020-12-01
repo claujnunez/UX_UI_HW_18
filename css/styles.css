@@ -133,29 +133,29 @@ a:hover {
 
 
 .name {
-    font-size: 20px;
-    color: #fff;
-    float: left;
-    padding: 25px 0;
+font-size: 20px;
+color: #fff;
+float: left;
+padding: 25px 0;
 }
 
 .inline-block {
-    text-align: center;
-    background-color: rgb(163, 163, 124);
+text-align: center;
+background-color: rgb(163, 163, 124);
 }
 
 .ul {
-    width: 50%;
-    margin-left: auto;
+width: 50%;
+margin-left: auto;
 }
 
 .content {
-    position: absolute;
-    left: 20%;
-    right: 20%;
-    top: 25%;
-    width: 500px;
-    margin: 0 auto;
+position: absolute;
+left: 20%;
+right: 20%;
+top: 25%;
+width: 500px;
+margin: 0 auto;
 }
 
 .buttonsWrapper {
