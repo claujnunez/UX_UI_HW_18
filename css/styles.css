@@ -309,12 +309,12 @@ a:hover {
     color: white;
     height: 100%;
     background-color: #800b72;
-    padding: 0 40px 100px 50px;
+    padding: 0 40px 70px 50px;
 }
 
 .line {
-    margin: 200px 150px 0px 0px;
-    border: 3px solid pink;
+    margin: 80px 200px 0px 0px;
+    border: 1px solid pink;
 }
 
 .bottomTitle {
@@ -374,7 +374,22 @@ footer {
 }
 
 /* Mobile resolution */
+/*  Top Section Code */
 @media(max-width: 500px) {
+
+    img {
+        width:100%;
+    }
+    .container-fluid {
+        max-width:100%;
+        width: 100%;
+    }
+    .col-md-3{
+        width:100%;
+        float:left;
+        margin:0;
+    }
+
    .navbar {
        height: 110px;
        padding: 0 15% 0 15%;
@@ -417,7 +432,6 @@ footer {
    }
 
    .description {
-       
        width: 100%;
        position: absolute;
        margin: 0%;
@@ -439,5 +453,28 @@ footer {
    .proSkills {
        width: 100%;
    }
+
+   /*  Middle Section Code */
+
+   .projectsSec {
+        margin: auto;
+   }
+
+   .card-body {
+    display: block;
+    float: right;
+    width: 100%;
+    /* background-color: red; */
+}
+
+   .card-body.Odd {
+       /* background-color: lime; */
+       display: block;
+       object-position: top;
+   }
+
+  
+
+   
 
 }
