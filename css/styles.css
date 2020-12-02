@@ -133,29 +133,29 @@ a:hover {
 
 
 .name {
-font-size: 20px;
-color: #fff;
-float: left;
-padding: 25px 0;
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    padding: 25px 0;
 }
 
 .inline-block {
-text-align: center;
-background-color: rgb(163, 163, 124);
+    text-align: center;
+    background-color: rgb(163, 163, 124);
 }
 
 .ul {
-width: 50%;
-margin-left: auto;
+    width: 50%;
+    margin-left: auto;
 }
 
 .content {
-position: absolute;
-left: 20%;
-right: 20%;
-top: 25%;
-width: 500px;
-margin: 0 auto;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 25%;
+    width: 500px;
+    margin: 0 auto;
 }
 
 .buttonsWrapper {
@@ -190,6 +190,38 @@ margin: 0 auto;
      margin-right: 40px;
  }
  
+/* vvvvvvvv  Social Icons vvvvvvvvvvv */
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-item {
+   
+    padding: 10px;
+    margin: 10px;  
+}
+
+.social-linkedin {
+    min-height: 25px;
+}
+
+.social-pinterest {
+    min-height: 25px;
+}
+
+.social-facebook {   
+    min-height: 25px;
+}
+
+.social-tweeter {   
+    min-height: 25px;
+}
+
+
+/* ^^^^^^^^^ Social Icons ^^^^^^^^^^^^ */
+
  .socialDiv {
      position: absolute;
      top: 150%;
@@ -201,7 +233,7 @@ margin: 0 auto;
  
 .iconsSocial {
      /* margin-right: 20px; */
-     width: 2.5%;
+     max-width: 10%;
  }
 
 /* Prejects Sections */
