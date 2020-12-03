@@ -13,7 +13,7 @@ html {
 }
 
 body{
-    background-color: #f0f2f0;
+    /* background-color: #f0f2f0; */
     height:auto;
     width:100%;
     margin: 0px;
@@ -47,10 +47,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* .navHeader {
-    float: right;
-    color: white;
-} */
+
 
 /* Navigation */
 .navbar {
@@ -191,14 +188,13 @@ a:hover {
  }
  
 /* vvvvvvvv  Social Icons vvvvvvvvvvv */
-.flexbox-container {
+.social-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.flexbox-item {
-   
+.social-item {
     padding: 10px;
     margin: 10px;  
 }
@@ -219,27 +215,106 @@ a:hover {
     min-height: 25px;
 }
 
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
-/* ^^^^^^^^^ Social Icons ^^^^^^^^^^^^ */
 
- .socialDiv {
-     position: absolute;
-     top: 150%;
-     left: 0%;
-     right: 0%;
-     color: white;
-     width: 100%;
- }
- 
-.iconsSocial {
-     /* margin-right: 20px; */
-     max-width: 10%;
- }
+
+/*  vvvvvvvvvvvv Projects Area  vvvvvvvvvv */
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* align-content: center; */
+    background-color: #fff;
+}
+
+.projects-row {
+    display: flex;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 30px;
+    width: 88%;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+.projects-item {
+    /* margin: 0 auto; */
+    /* background-color: seagreen; */
+    
+}
+
+.projects-optimeal {
+    width: 40%;
+    margin: 0;
+    /* background-color: #91618e; */
+    min-height: 250px;
+}
+
+.projects-optimeal-text {
+    width: 60%;
+    height: 100%;
+    padding: 15px;
+    /* background-color: #F47AF5; */
+    /* color: white; */
+}
+
+.projects-edgov {
+    width: 40%;
+    min-height: 250px;
+}
+
+.projects-edgov-text {
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    padding: 15px;
+    /* background-color: #F47AF5; */
+    /* color: white; */
+}
+
+.projects-satoria {
+    padding: 10 0 10 150;  
+    width: 40%; 
+    min-height: 250px;
+}
+
+.projects-satoria-text {
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    padding: 15px;
+    /* background-color: #F47AF5; */
+    /* color: white; */
+}
+
+.projects-cambio {
+    padding: 10 0 10 150;
+    width: 40%;   
+    min-height: 250px;
+}
+
+.projects-cambio-text {
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    padding: 15px;
+    /* background-color: #F47AF5; */
+    /* color: white; */
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
 
 /* Prejects Sections */
 .projectsSec {
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .float-container {
@@ -296,8 +371,9 @@ a:hover {
     max-height: 350px;    
 }
 
+/*  Soft Skills Icons Section */
 .container-fluid, .col-md-8, .col-md-4, .col-md-6 {
-    background-color: #f0f2f0;
+    /* background-color: #f0f2f0; */
     
 }
 
@@ -365,7 +441,7 @@ a:hover {
     list-style-position: outside;
 }
 
-/* Footer */
+/* vvvvvvvvvvvvv Footer Section vvvvvvvvvvvv */
 .page-footer ul {
     display: flex;
     justify-content: center;
