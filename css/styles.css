@@ -190,38 +190,6 @@ a:hover {
      margin-right: 40px;
  }
  
-/* vvvvvvvv  Social Icons vvvvvvvvvvv */
-.flexbox-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flexbox-item {
-   
-    padding: 10px;
-    margin: 10px;  
-}
-
-.social-linkedin {
-    min-height: 25px;
-}
-
-.social-pinterest {
-    min-height: 25px;
-}
-
-.social-facebook {   
-    min-height: 25px;
-}
-
-.social-tweeter {   
-    min-height: 25px;
-}
-
-
-/* ^^^^^^^^^ Social Icons ^^^^^^^^^^^^ */
-
  .socialDiv {
      position: absolute;
      top: 150%;
@@ -233,7 +201,7 @@ a:hover {
  
 .iconsSocial {
      /* margin-right: 20px; */
-     max-width: 10%;
+     width: 2.5%;
  }
 
 /* Prejects Sections */
@@ -266,7 +234,6 @@ a:hover {
     margin-bottom: 100px; /* Added */
 }
 
-
 .card-img {
     /* background-color: greenyellow; */
     background-color: #f0f2f0;
@@ -282,10 +249,10 @@ a:hover {
     text-align: right;
 }
 
-.Odd {
+.card-block {
     background-color: #f0f2f0;
     padding: 30 30 30 30;
-    margin-left: 100px;
+    margin-left: 10px;
     padding-bottom: 30px;
     text-align: left;
 }
@@ -512,9 +479,42 @@ footer {
 
    .card-body {
         display: block;
-        float: right;
+        float: left;
         width: 100%;
         /* background-color: red; */
+    }
+
+    .card-img {
+        position: relative;
+        justify-content: center;
+        padding: 0 30px 0 30px;
+        top: -100%;
+        /* background-color: purple; */
+    }
+
+    .textCard2 {
+        margin: 0 auto;
+        background-color: black;
+    }
+
+    #soteriaCard {
+        position: relative;
+        top: 100%;
+        /* background-color: lime; */
+    }
+
+    #picCard2 {
+        position: relative;
+        justify-content: center;
+        padding: 0 30px 0 30px;
+        top: -121%;
+        /* background-color: purple; */
+    }
+
+    #cambioCard {
+        position: relative;
+        top: 80%;
+        /* background-color: lime; */
     }
 
    .card-body.Odd {

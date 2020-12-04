@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
 
 </head>
+
 <body>
 <article class="sectionMain">
     <div class="logo-mobile">
@@ -34,13 +35,13 @@
      
     
         <div class="content">
-            <div class="smallHead">Hey there!<br><br></div>
-            <div class="nameTitle">I'm Claudia Nunez</div>
+            <a class="smallHead">Hey there!<br><br></a>
+            <a class="nameTitle">I'm Claudia Nunez</a>
             <p class="description">
                 "I'm a UX Designer helping amazing businesses  to create the best user experience and generate solutions on usability issues connected to their product"
             </p>
         </div>
-
+    
            <div class="buttonsWrapper">
                 <div class="container my-3">
     
@@ -50,14 +51,18 @@
                     </div>
                  
                 </div>
-                <!-- Social Media Icons Bar-->
-                <div class="flexbox-container">
 
-                    <div class="flexbox-item social-linkedin"><img src="./Images/Linkedin white.png" style="width: 35px; "></div>
-                    <div class="flexbox-item social-pinterest"><img src="./Images/Pinterest white.png" style="width: 35px; "></div>
-                    <div class="flexbox-item social-facebook"><img src="./Images/Facebook white.png" style="width: 35px; "></div>
-                    <div class="flexbox-item social-tweeter"><img src="./Images/Tweeter white.png" style="width: 35px; "></div>
-                    
+                <div class="container my-3">
+                    <div class="socialDiv"> 
+                        <div class="col-md-12 text-center"> 
+                            <ul>
+                                <a><img src="./Images/Linkedin white.png" class="iconsSocial"></a>
+                                <a><img src="./Images/Pinterest white.png" class="iconsSocial"></a>
+                                <a><img src="./Images/Facebook white.png" class="iconsSocial"></a>
+                                <a><img src="./Images/Tweeter white.png" class="iconsSocial"></a>
+                            </ul>
+                        </div>
+                    </div> 
                 </div>
             </div>
 
@@ -79,7 +84,7 @@
                         <img src="./Images/OptiMealscreens.png" class="card-imgOdd" alt="...">
                       </div>
                       <div class="col-md-6">
-                        <div class="shadow card-body Odd">
+                        <div class="shadow card-block">
                           <h3 class="card-title">Optimeal</h3>
                           <h5 class="card-title">Responsive Website</h5>
                           <p class="card-text">We created Optimeal RWW to Novigi startup company. We delivered an inclusive, easy to navigate, aesthetic, and engaging design. User insights were a key while creating an intuitive concept through prototyping.</p>
@@ -95,17 +100,17 @@
             <div class="container-fluid">
                 <div class="card mb-5" style="max-width: 50%;">
                     <div class="row no-gutters">
-                        <div class="col-md-8">
-                            <div class="shadow card-body">
+                        <div class="textCard">
+                            <div class="shadow card-body" id="soteriaCard">
                               <h3 class="card-title">Soteria</h3>
                               <h5 class="card-title">iOS mobile app</h5>
                               <p class="card-text">We creating an interactive safety mobile app that allows the user to have a safety plan with family and friends in case of emergency.</p>
-                              <div class="col-md-12 text-right">
-                                <button type="button" class="btn btn-outline-secondary">Case Study</button>
+                                <div class="col-md-12 text-right">
+                                    <button type="button" class="btn btn-outline-secondary">Case Study</button>
+                                </div>
                             </div>
-                            </div>
-                          </div>    
-                      <div class="col-md-4">
+                         </div>    
+                      <div class="picCard">
                         <img src="./Images/SatoriaScreen.png" class="card-img" alt="...">
                       </div>
                     </div>
@@ -119,7 +124,7 @@
                         <img src="./Images/EdgovMobileDesktop.png" class="card-imgOdd" alt="...">
                       </div>
                       <div class="col-md-6">
-                        <div class="shadow card-body Odd">
+                        <div class="shadow card-block">
                           <h3 class="card-title">ed.gov</h3>
                           <h5 class="card-title">Redesign Website</h5>
                           <p class="card-text">We redesigned Ed.gov and solved accessibility, integrated an intuitive navigation and enhance user experience with a clean and user centered design.</p>
@@ -135,8 +140,8 @@
             <div class="container-fluid">
                 <div class="card mb-3" style="max-width: 50%;">
                     <div class="row no-gutters">
-                        <div class="col-md-8">
-                            <div class="shadow card-body">
+                        <div class="textCard2">
+                            <div class="shadow card-body" id="cambioCard">
                               <h3 class="card-title">Cambio</h3>
                               <h5 class="card-title">iOS Mobile App</h5>
                               <p class="card-text">We created Cambio a gamer mobile app during HackTX2020 a 36hr. virtual hackathon. We were inspired by Google’s APIs to detect mood. Cambio helps identify your mood and provides the probability to win based on your mood.</p>
@@ -145,8 +150,8 @@
                             </div>
                             </div>
                           </div>    
-                      <div class="col-md-4">
-                        <img src="./Images/CabmioIOSApp.png" class="card-img" alt="...">
+                      <div class="picCard2">
+                        <img src="./Images/CabmioIOSApp.png" class="card-img" alt="..." id="picCard2">
                       </div>
                     </div>
                 </div>
