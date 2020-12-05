@@ -13,7 +13,7 @@ html {
 }
 
 body{
-    background-color: #f0f2f0;
+    background-color: #f0f2f0; 
     height:auto;
     width:100%;
     margin: 0px;
@@ -41,6 +41,7 @@ h1 {
 } */
 
 .bgImage {
+    background-color: lime;
     background-image: url("../Images/claujnunez_hero_backgroundimg.png");
     height: 100%;
     background-position: center;
@@ -204,10 +205,22 @@ a:hover {
      width: 2.5%;
  }
 
-/* Prejects Sections */
+/* vvvvvv  Prejects Sections vvvvvv */
+
+.row {
+    /* max-width: 50%; */
+    
+    background-color:   #f0f2f0;
+}
+
+#obtiCard{
+    max-width: 50%;
+    background-color: red;
+}
+
 .projectsSec {
+    /* background-color: red; */
     margin-top: 50px;
-    margin-bottom: 150px;
 }
 
 .float-container {
@@ -226,12 +239,21 @@ a:hover {
 .pictures {
     height: 10%;
 }
+/* Removes white color from background on cards */
+.picCard, .picCard2, .textCard {
+    background-color:  #f0f2f0;
+}
 
 .card {
     border: none;
     margin: 0 auto; /* Added */
     float: none; /* Added */
     margin-bottom: 100px; /* Added */
+}
+
+.card-title, .card-text {
+    margin: 15px;
+    /* background-color: rebeccapurple; */
 }
 
 .card-img {
@@ -250,11 +272,27 @@ a:hover {
 }
 
 .card-block {
-    background-color: #f0f2f0;
+    /* background-color: blue; */
     padding: 30 30 30 30;
     margin-left: 10px;
     padding-bottom: 30px;
     text-align: left;
+}
+
+#cambioCard {
+    width: 100%;
+}
+
+#soteria {
+    width: 50%;
+}
+
+#edgov {
+    width: 50%;
+}
+
+#cambio {
+    width: 50%;
 }
 
 .card-imgOdd {
@@ -263,8 +301,20 @@ a:hover {
     max-height: 350px;    
 }
 
-.container-fluid, .col-md-8, .col-md-4, .col-md-6 {
-    background-color: #f0f2f0;
+.soteria {
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.cambio {
+    /* background-color: yellow; */
+    display: flex;
+}
+/*  ^^^^^^^^^^ Projects Section ^^^^^^^^^^ */
+
+/* vvvvvv Soft Skills Section vvvvvvv */
+.container-fluid .col-md-8, .col-md-4 .col-md-6 {
+    background-color: red;
     
 }
 
@@ -331,8 +381,10 @@ a:hover {
     list-style-type: disc;
     list-style-position: outside;
 }
+/* ^^^^^^^^ Soft Skills Section ^^^^^^^^ */
 
-/* Footer */
+
+/* vvvvvvvvv Footer vvvvvvvvvvv */
 .page-footer ul {
     display: flex;
     justify-content: center;
@@ -357,15 +409,16 @@ footer {
     text-align: center;
     align-items: center;    
 }
-
-/* .navfooter a {
-    
-    position: relative;
-    
-    color: white;
-} */
+/* ^^^^^^^^  Footer  ^^^^^^^^ */
 
 
+
+
+
+
+
+
+/* ######################################### */
 
 /* Tablets and under resolutions */
 @media(max-width: 760px) {
@@ -395,18 +448,35 @@ footer {
 
 /* Mobile resolution */
 /*  Top Section Code */
-@media(max-width: 560px) {
+@media(max-width: 600px) {
 
     img {
         width:100%;
     }
+    #projectsSection {
+        background-color: purple;
+        display: block;
+    }
 
-    .col-md-3{
+    /* #optiCard {
+        position: absolute;
+        top: 40%;
+        background-color: blue;
+    } */
+
+     .container-fluid {
+        /* margin: 0 auto; */
+        /* max-width: 100% !important; */
+        
+        background-color: lime;
+    }
+
+    .col-md-3, .col-md-6 {
         width:100%;
         float:left;
         margin:0;
     }
-
+/* vvvvvv Navigation Bar Code vvvvvv */
    .navbar {
        height: 110px;
        padding: 0 15% 0 15%;
@@ -422,7 +492,13 @@ footer {
        background-color: rgba(0, 0, 0, .3);
    }
 
-   .logo-mobile {
+/* ^^^^^^ Navigation Bar Code ^^^^^^^ */
+   
+
+
+/* vvvvvvvv  Jumbotron Seciton Code vvvvvv*/
+
+    .logo-mobile {
        float: left;
        overflow: hidden;
        padding: 5% 25% 0 25%;
@@ -471,7 +547,7 @@ footer {
        width: 90%;
    }
 
-   /*  Middle Section Code */
+   /* vvvvvvvv Projects Middle Section Code vvvvvvvvvv */
 
    .projectsSec {
         margin: auto;
@@ -488,27 +564,36 @@ footer {
         position: relative;
         justify-content: center;
         padding: 0 30px 0 30px;
-        top: -100%;
-        /* background-color: purple; */
+        top: -0%;
+        left: -300px;
+        background-color: lightblue;
     }
 
     .textCard2 {
         margin: 0 auto;
-        background-color: black;
+        background-color: red;
     }
 
-    #soteriaCard {
+    #soteriaText {
         position: relative;
         top: 100%;
         /* background-color: lime; */
     }
+
+    .picCard {
+        position: relative;
+        left: -40%;
+        width: 50%;
+        background-color: lightcoral;
+    }
+
 
     #picCard2 {
         position: relative;
         justify-content: center;
         padding: 0 30px 0 30px;
         top: -121%;
-        /* background-color: purple; */
+        background-color: purple;
     }
 
     #cambioCard {
@@ -529,8 +614,17 @@ footer {
        
    }
 
-  
+   .card-imgOdd {
+       background-color: magenta;
+       width: 0 auto;
+       margin: 0;
+       padding: 0%;
 
-   
+   }
+
+   .card-block {
+       margin: 0;
+       padding: 0;
+   }
 
 }
